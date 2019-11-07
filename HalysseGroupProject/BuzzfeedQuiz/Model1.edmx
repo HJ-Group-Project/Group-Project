@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DB_128040_quizletModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TAnswer">
+          <Key>
+            <PropertyRef Name="AnswerID" />
+          </Key>
+          <Property Name="AnswerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AnswerOne" Type="nvarchar(max)" />
+          <Property Name="AnswerTwo" Type="nvarchar(max)" />
+          <Property Name="AnswerThree" Type="nvarchar(max)" />
+          <Property Name="AnswerFour" Type="nvarchar(max)" />
+          <Property Name="AnswerFive" Type="nvarchar(max)" />
+          <Property Name="AnsQuizID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TQuiz">
+          <Key>
+            <PropertyRef Name="QuizID" />
+          </Key>
+          <Property Name="QuizID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="QuizName" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_TAnswer_TQuiz">
+          <End Role="TQuiz" Type="Self.TQuiz" Multiplicity="1" />
+          <End Role="TAnswer" Type="Self.TAnswer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TQuiz">
+              <PropertyRef Name="QuizID" />
+            </Principal>
+            <Dependent Role="TAnswer">
+              <PropertyRef Name="AnsQuizID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DB_128040_quizletModelStoreContainer">
+          <EntitySet Name="TAnswer" EntityType="Self.TAnswer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TQuiz" EntityType="Self.TQuiz" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TAnswer_TQuiz" Association="Self.FK_TAnswer_TQuiz">
+            <End Role="TQuiz" EntitySet="TQuiz" />
+            <End Role="TAnswer" EntitySet="TAnswer" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_128040_quizletModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TAnswer">
+          <Key>
+            <PropertyRef Name="AnswerID" />
+          </Key>
+          <Property Name="AnswerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AnswerOne" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AnswerTwo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AnswerThree" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AnswerFour" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AnswerFive" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AnsQuizID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TQuiz" Relationship="Self.FK_TAnswer_TQuiz" FromRole="TAnswer" ToRole="TQuiz" />
+        </EntityType>
+        <EntityType Name="TQuiz">
+          <Key>
+            <PropertyRef Name="QuizID" />
+          </Key>
+          <Property Name="QuizID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="QuizName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="TAnswers" Relationship="Self.FK_TAnswer_TQuiz" FromRole="TQuiz" ToRole="TAnswer" />
+        </EntityType>
+        <Association Name="FK_TAnswer_TQuiz">
+          <End Role="TQuiz" Type="Self.TQuiz" Multiplicity="1" />
+          <End Role="TAnswer" Type="Self.TAnswer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TQuiz">
+              <PropertyRef Name="QuizID" />
+            </Principal>
+            <Dependent Role="TAnswer">
+              <PropertyRef Name="AnsQuizID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DB_128040_quizletEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TAnswers" EntityType="Self.TAnswer" />
+          <EntitySet Name="TQuizs" EntityType="Self.TQuiz" />
+          <AssociationSet Name="FK_TAnswer_TQuiz" Association="Self.FK_TAnswer_TQuiz">
+            <End Role="TQuiz" EntitySet="TQuizs" />
+            <End Role="TAnswer" EntitySet="TAnswers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DB_128040_quizletModelStoreContainer" CdmEntityContainer="DB_128040_quizletEntities">
+          <EntitySetMapping Name="TAnswers">
+            <EntityTypeMapping TypeName="DB_128040_quizletModel.TAnswer">
+              <MappingFragment StoreEntitySet="TAnswer">
+                <ScalarProperty Name="AnswerID" ColumnName="AnswerID" />
+                <ScalarProperty Name="AnswerOne" ColumnName="AnswerOne" />
+                <ScalarProperty Name="AnswerTwo" ColumnName="AnswerTwo" />
+                <ScalarProperty Name="AnswerThree" ColumnName="AnswerThree" />
+                <ScalarProperty Name="AnswerFour" ColumnName="AnswerFour" />
+                <ScalarProperty Name="AnswerFive" ColumnName="AnswerFive" />
+                <ScalarProperty Name="AnsQuizID" ColumnName="AnsQuizID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TQuizs">
+            <EntityTypeMapping TypeName="DB_128040_quizletModel.TQuiz">
+              <MappingFragment StoreEntitySet="TQuiz">
+                <ScalarProperty Name="QuizID" ColumnName="QuizID" />
+                <ScalarProperty Name="QuizName" ColumnName="QuizName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
