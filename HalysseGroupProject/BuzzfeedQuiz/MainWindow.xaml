@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <GroupBox x:Name="quizGB" Header="Choose a quiz!" HorizontalAlignment="Left" Height="136" Margin="10,26,0,0" VerticalAlignment="Top" Width="460" FontSize="22">
+            <StackPanel x:Name="quizstck" HorizontalAlignment="Left" Height="107" Margin="4,-7,-2,-0.667" VerticalAlignment="Top" Width="446">
+                <RadioButton x:Name="coffeeQuizRB" Content="What kind of coffee drink are you?"/>
+                <RadioButton x:Name="animalQuizRB" Content="What kind of animal are you?"/>
+                <RadioButton x:Name="spongebobQuizRB" Content="Which character from Spongebob are you?"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="chooseQuizbtn" Content="Take the Quiz" HorizontalAlignment="Left" Height="43" Margin="41,167,0,0" VerticalAlignment="Top" Width="168" FontSize="22" Click="ChooseQuizbtn_Click"/>
+
     </Grid>
 </Window>

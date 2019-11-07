@@ -23,6 +23,39 @@ namespace BuzzfeedQuiz
         public MainWindow()
         {
             InitializeComponent();
+
+            
+
+            
+        }
+
+        private void ChooseQuizbtn_Click(object sender, RoutedEventArgs e)
+        {
+            int quizId;
+            TQuiz quiz = new TQuiz();
+            quizId=quiz.QuizID;
+            const int coffeeQuizID=13;
+            const int animalQuizID = 12;
+            const int spongebobQuizID = 14;
+            coffeeQuiz cq = new coffeeQuiz();
+            animalQuiz aq = new animalQuiz();
+            spongebobQuiz sq = new spongebobQuiz();
+
+            if (coffeeQuizRB.IsChecked==true)
+            {
+                quizId = coffeeQuizID;
+                cq.Show();
+            }
+            else if(animalQuizRB.IsChecked==true)
+            {
+                quizId = animalQuizID;
+                aq.Show();
+            }
+            else if (spongebobQuizRB.IsChecked==true)
+            {
+                quizId = spongebobQuizID;
+                sq.Show();
+            }
         }
     }
 }
