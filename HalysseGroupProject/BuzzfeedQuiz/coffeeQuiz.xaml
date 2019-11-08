@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuzzfeedQuiz"
         mc:Ignorable="d"
-        Title="coffeeQuiz" Height="450" Width="800">
+        Title="coffeeQuiz" Height="957.43" Width="1014.444">
     <Grid>
-        
+
+        <GroupBox x:Name="cofQuesFour" Header="Pick a hobby:" HorizontalAlignment="Left" Height="186" Margin="529,236,0,0" VerticalAlignment="Top" Width="469" FontSize="22">
+            <StackPanel x:Name="cofQues4SP" HorizontalAlignment="Left" Height="142" Margin="-4,12,0,0" VerticalAlignment="Top" Width="447">
+                <RadioButton x:Name="moviesRB" Content="Watch movies"/>
+                <RadioButton x:Name="shopRB" Content="Go shopping"/>
+                <RadioButton x:Name="hikeRB" Content="Hike"/>
+                <RadioButton x:Name="sleepRB" Content="Take naps"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="cofQuesThree" Header="Cats or dogs?" HorizontalAlignment="Left" Height="186" Margin="10,236,0,0" VerticalAlignment="Top" Width="492" FontSize="22">
+            <StackPanel x:Name="cofQues3SP" HorizontalAlignment="Left" Height="124" Margin="-1,13,0,0" VerticalAlignment="Top" Width="467">
+                <RadioButton x:Name="catRB" Content="Cats"/>
+                <RadioButton x:Name="dogsRB" Content="Dogs"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="cofQuesOne" Header="Are you a morning or night person?" HorizontalAlignment="Left" Height="190" Margin="10,23,0,0" VerticalAlignment="Top" Width="492" FontSize="22">
+            <StackPanel x:Name="cofQues1SP" HorizontalAlignment="Left" Height="125" Margin="4,22,-2,0" VerticalAlignment="Top" Width="478">
+                <RadioButton x:Name="mornRB" Content="Morning"/>
+                <RadioButton x:Name="nightRB" Content="Night"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="cofQuesTwo" Header="Choose a color:" HorizontalAlignment="Left" Height="190" Margin="529,23,0,0" VerticalAlignment="Top" Width="469" FontSize="22">
+            <StackPanel x:Name="cofQues2SP" HorizontalAlignment="Left" Height="114" Margin="10,10,0,0" VerticalAlignment="Top" Width="434">
+                <RadioButton x:Name="purpRB" Content="Purple"/>
+                <RadioButton x:Name="orangeRB" Content="Orange"/>
+                <RadioButton x:Name="blueRB" Content="Blue"/>
+                <RadioButton x:Name="BlackRB" Content="Black"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="CofresultsBTN" Content="Get Results!" HorizontalAlignment="Left" Height="105" Margin="348,456,0,0" VerticalAlignment="Top" Width="334" Click="CofresultsBTN_Click_1" FontSize="22"/>
+
     </Grid>
 </Window>
