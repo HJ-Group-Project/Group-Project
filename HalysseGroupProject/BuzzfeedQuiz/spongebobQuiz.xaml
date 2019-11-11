@@ -16,7 +16,28 @@
             </StackPanel>
         </GroupBox>
         <GroupBox x:Name="ques2GB" Header="Pick a color:" HorizontalAlignment="Left" Height="184" Margin="400,10,0,0" VerticalAlignment="Top" Width="353" FontSize="22"/>
-        <StackPanel x:Name="ques2SP" HorizontalAlignment="Left" Height="148" Margin="400,46,0,0" VerticalAlignment="Top" Width="353"/>
+        <StackPanel x:Name="ques2SP" HorizontalAlignment="Left" Height="148" Margin="400,46,0,0" VerticalAlignment="Top" Width="353">
+            <RadioButton x:Name="greenRB" Content="Green" FontSize="22"/>
+            <RadioButton x:Name="pinkRB" Content="Pink" FontSize="22"/>
+            <RadioButton x:Name="purpRB" Content="Purple" FontSize="22"/>
+            <RadioButton x:Name="orangeRB" Content="Orange" FontSize="22"/>
+        </StackPanel>
+        <GroupBox x:Name="ques3GB" Header="Pick your favorite food:" HorizontalAlignment="Left" Height="151" Margin="10,199,0,0" VerticalAlignment="Top" Width="346" FontSize="22"/>
+        <GroupBox x:Name="ques4GB" Header="Pick a Spongebob quote:" HorizontalAlignment="Left" Height="143" Margin="361,207,0,0" VerticalAlignment="Top" Width="422" FontSize="22">
+            <StackPanel x:Name="ques4SP" HorizontalAlignment="Left" Height="108" Margin="-2,4,-2.667,-6" VerticalAlignment="Top" Width="414">
+                <RadioButton x:Name="garyRB" Content="&quot;Gary, I'm absorbing his blows like I'm made of some spongey material!&quot;" FontSize="12"/>
+                <RadioButton x:Name="patRB" Content="&quot;I wumbo, you wumbo, he-she-me wumbo&quot;" FontSize="18"/>
+                <RadioButton x:Name="plankRB" Content="&quot;Ravioli, ravioli, give me the formuoli&quot;"/>
+                <RadioButton x:Name="sandRB" Content="&quot;Are shoes from Texas dumb?&quot;"/>
+            </StackPanel>
+        </GroupBox>
+        <StackPanel x:Name="ques3SP" HorizontalAlignment="Left" Height="118" Margin="10,232,0,0" VerticalAlignment="Top" Width="346">
+            <RadioButton x:Name="crabRB" Content="Crab Cakes" FontSize="22"/>
+            <RadioButton x:Name="pizzaRB" Content="Pizza" FontSize="22"/>
+            <RadioButton x:Name="spagRB" Content="Spaghetti" FontSize="22"/>
+            <RadioButton x:Name="friesRB" Content="Fries" FontSize="22"/>
+        </StackPanel>
+        <Button x:Name="resultsBTN" Content="Get Results!" HorizontalAlignment="Left" Height="56" Margin="280,355,0,0" VerticalAlignment="Top" Width="235" FontSize="22" Click="ResultsBTN_Click"/>
 
     </Grid>
 </Window>

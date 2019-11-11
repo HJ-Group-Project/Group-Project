@@ -73,16 +73,28 @@
     <Compile Include="coffeeQuiz.xaml.cs">
       <DependentUpon>coffeeQuiz.xaml</DependentUpon>
     </Compile>
+    <Compile Include="KrabsResults.xaml.cs">
+      <DependentUpon>KrabsResults.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PatrickResults.xaml.cs">
+      <DependentUpon>PatrickResults.xaml</DependentUpon>
     </Compile>
     <Compile Include="pslResults.xaml.cs">
       <DependentUpon>pslResults.xaml</DependentUpon>
     </Compile>
     <Compile Include="spongebobQuiz.xaml.cs">
       <DependentUpon>spongebobQuiz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="spongebobResults.xaml.cs">
+      <DependentUpon>spongebobResults.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SquidwardResults.xaml.cs">
+      <DependentUpon>SquidwardResults.xaml</DependentUpon>
     </Compile>
     <Compile Include="TAnswer.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -105,6 +117,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="KrabsResults.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -117,11 +133,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PatrickResults.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="pslResults.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="spongebobQuiz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="spongebobResults.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SquidwardResults.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
