@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="vanillaResults" Height="450" Width="800">
     <Grid>
-        
+        <Image x:Name="vanResImg" HorizontalAlignment="Left" Height="193" Margin="220,10,0,0" VerticalAlignment="Top" Width="347"/>
+        <Label x:Name="resNamelbl" Content="Vanilla Latte" HorizontalAlignment="Left" Height="55" Margin="220,203,0,0" VerticalAlignment="Top" Width="347" FontSize="22"/>
+        <Label x:Name="descriplbl" Content="You are sweet and a classic. Everyone is &#xD;&#xA;drawn to you, as you are easy to get along&#xD;&#xA;with. You don't always like to take risks, but&#xD;&#xA;you know how to have fun. Just because&#xD;&#xA;your vanilla, does not make you boring!" HorizontalAlignment="Left" Height="153" Margin="220,258,0,0" VerticalAlignment="Top" Width="366" FontSize="18"/>
+
     </Grid>
 </Window>

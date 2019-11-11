@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="spongebobQuiz" Height="450" Width="800">
     <Grid>
-        
+        <GroupBox x:Name="ques1GB" Header="In your free time, you are:" HorizontalAlignment="Left" Height="184" Margin="10,10,0,0" VerticalAlignment="Top" Width="346" FontSize="22">
+            <StackPanel x:Name="ques1SP" HorizontalAlignment="Left" Height="139" Margin="-6,4,0,0" VerticalAlignment="Top" Width="336">
+                <RadioButton x:Name="musicRB" Content="Listening to music"/>
+                <RadioButton x:Name="movieRB" Content="Watching movies"/>
+                <RadioButton x:Name="hangRB" Content="Hanging out with friends"/>
+                <RadioButton x:Name="workRB" Content="Working"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="ques2GB" Header="Pick a color:" HorizontalAlignment="Left" Height="184" Margin="400,10,0,0" VerticalAlignment="Top" Width="353" FontSize="22"/>
+        <StackPanel x:Name="ques2SP" HorizontalAlignment="Left" Height="148" Margin="400,46,0,0" VerticalAlignment="Top" Width="353"/>
+
     </Grid>
 </Window>

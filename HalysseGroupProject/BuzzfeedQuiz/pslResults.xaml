@@ -12,8 +12,8 @@
             <ColumnDefinition Width="33*"/>
         </Grid.ColumnDefinitions>
         <Image x:Name="pslImg" HorizontalAlignment="Left" Height="203" Margin="166,10,0,0" VerticalAlignment="Top" Width="413"/>
-        <Label x:Name="resultNamelbl" Content="Label" HorizontalAlignment="Left" Height="58" Margin="170,232,0,0" VerticalAlignment="Top" Width="365" FontSize="36"/>
-        <Label x:Name="descriplbl" Content="Label" HorizontalAlignment="Left" Height="101" Margin="170,290,0,0" VerticalAlignment="Top" Width="413"/>
+        <Label x:Name="resultNamelbl" Content="Pumpkin Spice Latte" HorizontalAlignment="Left" Height="58" Margin="182,218,0,0" VerticalAlignment="Top" Width="365" FontSize="36"/>
+        <Label x:Name="descriplbl" Content="You are warm and cozy but adventurous. You make &#xD;&#xA;sure everyone around you has a good time, even &#xD;&#xA;if it means stressing yourself out to do so. Life may&#xD;&#xA;not always be sweet, but you make the best of&#xD;&#xA; every situation. " HorizontalAlignment="Left" Height="130" Margin="166,281,0,0" VerticalAlignment="Top" Width="427" FontSize="18"/>
 
     </Grid>
 </Window>

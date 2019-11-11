@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuzzfeedQuiz"
         mc:Ignorable="d"
-        Title="coffeeQuiz" Height="957.43" Width="1014.444">
+        Title="coffeeQuiz" Height="638.883" Width="1014.444">
     <Grid>
 
         <GroupBox x:Name="cofQuesFour" Header="Pick a hobby:" HorizontalAlignment="Left" Height="186" Margin="529,236,0,0" VerticalAlignment="Top" Width="469" FontSize="22">
