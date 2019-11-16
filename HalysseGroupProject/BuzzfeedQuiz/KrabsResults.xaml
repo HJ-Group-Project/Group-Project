@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="KrabsResults" Height="450" Width="800">
     <Grid>
-        
+        <Image x:Name="krabImg" Source="https://pbs.twimg.com/media/EBdizAhXkAY5Rg3.jpg" HorizontalAlignment="Left" Height="170" Margin="283,10,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label x:Name="krabLBL" Content="Mr. Krabs" HorizontalAlignment="Left" Height="65" Margin="131,185,0,0" VerticalAlignment="Top" Width="479" FontSize="36"/>
+        <Label x:Name="krabDescrip" Content="You never turn down a dollar. You're hardworking and value &#xD;&#xA;your work above all else. Your friends admire you for your&#xD;&#xA;dedication to any task you commit to. You're not afraid to tell&#xD;&#xA;it like it is, either. You're honest and tell your friends what they&#xD;&#xA;need to hear. " HorizontalAlignment="Left" Height="156" Margin="131,255,0,0" VerticalAlignment="Top" Width="525" FontSize="18"/>
+
     </Grid>
 </Window>
