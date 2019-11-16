@@ -9,7 +9,7 @@
     <Grid>
         <Image x:Name="patImg" Source="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/1200px-Patrick_Star.svg.png" HorizontalAlignment="Left" Height="401" Margin="0,10,0,0" VerticalAlignment="Top" Width="378"/>
         <Label Content="Patrick Star" HorizontalAlignment="Left" Height="89" Margin="383,40,-9.667,0" VerticalAlignment="Top" Width="420" FontSize="36"/>
-        <Label Content="Label" HorizontalAlignment="Left" Height="162" Margin="378,134,0,0" VerticalAlignment="Top" Width="372"/>
+        <Label x:Name="patDescrip" Content="You are fun loving and not afraid to show it!&#xD;&#xA;You value your friends and family above all &#xD;&#xA;else and make no excuses when they ask you&#xD;&#xA;a favor. Your loyalty is admirable and your &#xD;&#xA;friends always call you when they need a &#xD;&#xA;good time. " HorizontalAlignment="Left" Height="162" Margin="378,134,0,0" VerticalAlignment="Top" Width="372" FontSize="18"/>
 
     </Grid>
 </Window>
