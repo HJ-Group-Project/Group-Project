@@ -43,5 +43,10 @@ namespace BuzzfeedQuiz
         {
 
         }
+
+        private void RadioButton_Checked_4(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
