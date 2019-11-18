@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="americanoResults" Height="450" Width="800">
     <Grid>
-        <Image x:Name="amImg" HorizontalAlignment="Left" Height="214" Margin="183,10,0,0" VerticalAlignment="Top" Width="437"/>
-        <Label x:Name="resNameLB" Content="Americano" HorizontalAlignment="Left" Height="60" Margin="183,224,0,0" VerticalAlignment="Top" Width="437" FontSize="22"/>
+        <Image x:Name="amImg" Source="https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Americano-by-Nespresso.jpg" HorizontalAlignment="Left" Height="214" Margin="183,28,0,0" VerticalAlignment="Top" Width="380"/>
+        <Label x:Name="resNameLB" Content="Americano" HorizontalAlignment="Left" Height="37" Margin="183,242,0,0" VerticalAlignment="Top" Width="437" FontSize="22"/>
         <Label Content="You are strong and steadfast. You are not easily phased&#xD;&#xA;and are always true to your word. You value strength&#xD;&#xA;and courage over having a good time, but that doesn't&#xD;&#xA;keep you from having fun. " HorizontalAlignment="Left" Height="127" Margin="183,284,0,0" VerticalAlignment="Top" Width="455" FontSize="18"/>
 
     </Grid>

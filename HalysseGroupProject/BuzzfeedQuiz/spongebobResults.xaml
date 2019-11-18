@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="spongebobResults" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="http://pngimg.com/uploads/spongebob/spongebob_PNG50.png"  HorizontalAlignment="Left" Height="320" Margin="10,10,0,0" VerticalAlignment="Top" Width="382"/>
+        <Label Content="Spongebob Squarepants" HorizontalAlignment="Left" Height="93" Margin="397,29,0,0" VerticalAlignment="Top" Width="386" FontSize="34"/>
+        <Label Content="You have never seen a bad day in your life. Your&#xD;&#xA;friends always think of you as a positive, hard-&#xD;&#xA;worker. You value motivation and everything&#xD;&#xA;you do is your best work. You're loyal, despite&#xD;&#xA;sometimes being taken for granted. " HorizontalAlignment="Left" Height="176" Margin="392,122,0,0" VerticalAlignment="Top" Width="391" FontSize="18"/>
+
     </Grid>
 </Window>

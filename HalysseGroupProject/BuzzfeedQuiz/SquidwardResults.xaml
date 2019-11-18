@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="SquidwardResults" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="https://i.pinimg.com/originals/fc/20/d7/fc20d7ba75499df5113b2b3f94b87730.jpg" HorizontalAlignment="Left" Height="273" Margin="413,28,0,0" VerticalAlignment="Top" Width="370"/>
+        <Label x:Name="squidLBL" Content="Squidward" HorizontalAlignment="Left" Height="76" Margin="10,111,0,0" VerticalAlignment="Top" Width="356" FontSize="36"/>
+        <Label x:Name="squidDescrip" Content="You are a no-funny-business type of person,&#xD;&#xA;which is not a bad thing. You're commitment&#xD;&#xA;to responsibilities you don't necessarily want &#xD;&#xA;to do is true. And while your friends may &#xD;&#xA;drive you insane, you are always there for them.&#xD;&#xA;" HorizontalAlignment="Left" Height="138" Margin="10,192,0,0" VerticalAlignment="Top" Width="398" FontSize="18"/>
+
     </Grid>
 </Window>
