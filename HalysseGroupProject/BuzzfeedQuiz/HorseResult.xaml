@@ -1,0 +1,15 @@
+﻿<Window x:Class="BuzzfeedQuiz.HorseResult"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuzzfeedQuiz"
+        mc:Ignorable="d"
+        Title="HorseResult" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="59" TextWrapping="Wrap" Text="Your animal is a Horse!" VerticalAlignment="Top" Width="389" Margin="17,326,0,0" FontSize="36" FontFamily="Hobo Std"/>
+        <TextBox HorizontalAlignment="Left" Height="291" TextWrapping="Wrap" Text="The horse, You are a bit of a busy body, you can't sit still for too long because there's always something to do. You have a lot of plans all over the place. You like to travel a lot. You're a great person, but sometimes need to slow down." VerticalAlignment="Top" Width="298" Margin="459,58,0,0" TextChanged="TextBox_TextChanged" FontSize="22" FontStyle="Italic"/>
+        <Image Margin="10,31,376,114" Source="Image1.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

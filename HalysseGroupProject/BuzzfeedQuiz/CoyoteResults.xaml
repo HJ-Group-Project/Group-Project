@@ -1,0 +1,15 @@
+﻿<Window x:Class="BuzzfeedQuiz.CoyoteResults"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuzzfeedQuiz"
+        mc:Ignorable="d"
+        Title="CoyoteResults" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="43" TextWrapping="Wrap" Text="Your animal is a Coyote!" VerticalAlignment="Top" Width="409" Margin="10,350,0,0" FontSize="36" FontFamily="Hobo Std"/>
+        <TextBox HorizontalAlignment="Left" Height="394" TextWrapping="Wrap" Text="The coyote, you tend to stick close to your friends because you all have a tight bond. This can be both good and bad, as you like to show off in front of your friends to prove how cool you are. This little trait tends to get you into trouble, but luckily you have a whole at your back willing to fight along side you." VerticalAlignment="Top" Width="316" Margin="447,25,0,0" FontSize="24" FontStyle="Italic"/>
+        <Image Margin="31,42,378,95" Source="Image3.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>

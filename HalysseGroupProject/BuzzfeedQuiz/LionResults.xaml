@@ -1,0 +1,15 @@
+﻿<Window x:Class="BuzzfeedQuiz.LionResults"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BuzzfeedQuiz"
+        mc:Ignorable="d"
+        Title="LionResults" Height="450" Width="800">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="320" TextWrapping="Wrap" Text="The Lion, you are strong willed and you put family first. You have a strong sense of duty to your home and loved ones. You are a provider and protector. " VerticalAlignment="Top" Width="264" Margin="504,53,0,0" TextChanged="TextBox_TextChanged" FontSize="24" FontStyle="Italic"/>
+        <TextBox HorizontalAlignment="Left" Height="51" TextWrapping="Wrap" Text="Your animal is a Lion!" VerticalAlignment="Top" Width="375" Margin="60,338,0,0" FontSize="36" FontFamily="Hobo Std"/>
+        <Image Margin="36,35,345,109" Source="Image2.png" Stretch="Fill"/>
+
+    </Grid>
+</Window>
