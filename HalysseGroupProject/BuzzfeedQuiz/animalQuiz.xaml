@@ -7,6 +7,38 @@
         mc:Ignorable="d"
         Title="animalQuiz" Height="450" Width="800">
     <Grid>
-        
+        <GroupBox Header="What is your lifestyle?" HorizontalAlignment="Left" Height="181" VerticalAlignment="Top" Width="360" Margin="24,10,0,0" FontSize="14" FontWeight="Bold" BorderBrush="#FFD315FD" Foreground="#FF210EDA">
+            <ListBox HorizontalAlignment="Left" Height="141" VerticalAlignment="Top" Width="318" Margin="0,10,0,0">
+                <RadioButton Content="Staying in place comfortably" Checked="RadioButton_Checked_2" Height="19" Width="182" FontWeight="Normal"/>
+                <RadioButton Content="I come and go as I please" Checked="RadioButton_Checked_3" Height="20" Width="255" FontWeight="Normal"/>
+                <RadioButton Content="I spend a lot of time out, &#xD;&#xA;but love to come back home" FontWeight="Normal"/>
+                <RadioButton Content="I spend all day with my friends&#xD;&#xA;" FontWeight="Normal"/>
+            </ListBox>
+        </GroupBox>
+        <GroupBox Header="Someone comes to you looking to start a fight, &#xD;&#xA;what do you do?" HorizontalAlignment="Left" Height="193" VerticalAlignment="Top" Width="360" Margin="24,210,0,0" FontSize="14" FontWeight="Bold" Cursor="None" BorderBrush="#FFB01AE8" Foreground="#FF0D20DE">
+            <GroupBox Header="What does your social circle look like?" HorizontalAlignment="Left" Height="194" Margin="394,-235,-397,0" VerticalAlignment="Top" Width="351" BorderBrush="#FFC210EA">
+                <GroupBox Header="How open would you say your life is?" HorizontalAlignment="Left" Height="184" Margin="0,183,-2,-199" VerticalAlignment="Top" Width="341" BorderBrush="#FFC217E8">
+                    <ListBox Margin="10,10,21,7">
+                        <RadioButton Content="I don't believe my life is anyone's concern" FontWeight="Normal"/>
+                        <RadioButton Content="My life is an open book&#xD;&#xA;" FontWeight="Normal" Height="20" Width="244"/>
+                        <RadioButton Content="I've got many secrets" FontWeight="Normal"/>
+                        <RadioButton Content="I'll exaggerate the truth most likely" FontWeight="Normal"/>
+                    </ListBox>
+                </GroupBox>
+            </GroupBox>
+        </GroupBox>
+        <ListBox HorizontalAlignment="Left" Height="141" VerticalAlignment="Top" Width="331" Margin="34,249,0,0">
+            <RadioButton Content="I sneak up on them and strike" FontSize="14"/>
+            <RadioButton Content="I walk away as it's unnecessary to fight" FontSize="14"/>
+            <RadioButton Content="I blindly go raging in tackling them" FontSize="14"/>
+            <RadioButton Content="I call my friends and we handle it together" Height="20" FontSize="14"/>
+        </ListBox>
+        <ListBox Margin="432,49,51,228">
+            <RadioButton Content="I stick to myself&#xD;&#xA;" Height="17" Width="175" FontSize="14"/>
+            <RadioButton Content="I can strike up a conversation with strangers" FontSize="14"/>
+            <RadioButton Content="Mostly just family" Checked="RadioButton_Checked_4" Height="19" Width="128" FontSize="14"/>
+            <RadioButton Content="I have some loyal friends" FontSize="14"/>
+        </ListBox>
+
     </Grid>
 </Window>
