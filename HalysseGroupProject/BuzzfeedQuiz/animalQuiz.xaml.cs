@@ -48,5 +48,10 @@ namespace BuzzfeedQuiz
         {
 
         }
+
+        private void ResultusBttn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
