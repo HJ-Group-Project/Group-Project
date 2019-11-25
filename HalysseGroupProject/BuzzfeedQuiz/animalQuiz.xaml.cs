@@ -24,32 +24,19 @@ namespace BuzzfeedQuiz
             InitializeComponent();
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void RadioButton_Checked_4(object sender, RoutedEventArgs e)
-        {
-
-        }
+        DB_128040_quizletEntities db = new DB_128040_quizletEntities();
 
         private void ResultusBttn_Click(object sender, RoutedEventArgs e)
+        {
+            int Aques1AnswerID = 0, Aques2AnswerID = 0, Aques3AnswerID = 0, Aques4AnswerID = 0, AanswerTotal = 0;
+            AlligatorResults ar = new AlligatorResults();
+            HorseResult hr = new HorseResult();
+            LionResults lr = new LionResults();
+            CoyoteResults cr = new CoyoteResults();
+        }
+        TAnswer answer = new TAnswer();
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
         {
 
         }
