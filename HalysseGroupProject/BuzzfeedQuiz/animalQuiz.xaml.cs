@@ -43,78 +43,78 @@ namespace BuzzfeedQuiz
             }
             else if (comegoRB.IsChecked == true)
             {
-                ques1AnswerID = 2;
+                ques2AnswerID = 2;
                 answer.AnswerOne = "2";
             }
             else if (spendRB.IsChecked == true)
             {
-                ques1AnswerID = 3;
-                answer.AnswerOne = "2";
+                ques3AnswerID = 3;
+                answer.AnswerOne = "3";
             }
             else if (friendsRB.IsChecked == true)
             {
-                ques1AnswerID = 4;
-                answer.AnswerOne = "2";
+                ques4AnswerID = 4;
+                answer.AnswerOne = "4";
             }
             if (strikeRB.IsChecked == true)
             {
                 ques1AnswerID = 1;
-                answer.AnswerOne = "1";
+                answer.AnswerTwo = "1";
             }
             else if (walkRB.IsChecked == true)
             {
-                ques1AnswerID = 2;
-                answer.AnswerOne = "2";
+                ques2AnswerID = 2;
+                answer.AnswerTwo = "2";
             }
             else if (rageRB.IsChecked == true)
             {
-                ques1AnswerID = 3;
-                answer.AnswerOne = "3";
+                ques3AnswerID = 3;
+                answer.AnswerTwo = "3";
             }
             else if (callRB.IsChecked == true)
             {
-                ques1AnswerID = 4;
-                answer.AnswerOne = "4";
+                ques4AnswerID = 4;
+                answer.AnswerTwo = "4";
             }
             if (myselfRB.IsChecked == true)
             {
                 ques1AnswerID = 1;
-                answer.AnswerOne = "1";
+                answer.AnswerThree = "1";
             }
             else if (strangerRB.IsChecked == true)
             {
-                ques1AnswerID = 2;
-                answer.AnswerOne = "2";
+                ques2AnswerID = 2;
+                answer.AnswerThree = "2";
             }
             else if (familyRB.IsChecked == true)
             {
-                ques1AnswerID = 3;
-                answer.AnswerOne = "3";
+                ques3AnswerID = 3;
+                answer.AnswerThree = "3";
             }
             else if (loyalRB.IsChecked == true)
             {
-                ques1AnswerID = 4;
-                answer.AnswerOne = "4";
+                ques4AnswerID = 4;
+                answer.AnswerThree = "4";
             }
             if (secretRB.IsChecked == true)
             {
                 ques1AnswerID = 1;
-                answer.AnswerOne = "1";
+                answer.AnswerFour = "1";
             }
             else if (bookRB.IsChecked == true)
             {
-                ques1AnswerID = 2;
-                answer.AnswerOne = "2";
+                ques2AnswerID = 2;
+                answer.AnswerFour = "2";
             }
             else if (lifeRB.IsChecked == true)
             {
-                ques1AnswerID = 3;
-                answer.AnswerOne = "3";
+                ques3AnswerID = 3;
+                answer.AnswerFour = "3";
             }
             else if (truthRB.IsChecked == true)
             {
-                ques1AnswerID = 4;
-                answer.AnswerOne = "4";
+                ques4AnswerID = 4;
+                answer.AnswerFour = "4";
             }
             answerTotal = ques1AnswerID + ques2AnswerID + ques3AnswerID + ques4AnswerID;
             if (answerTotal <= 4)
