@@ -1,7 +1,7 @@
 ﻿    <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
         <title>Halysse Group Project</title>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jmpress/0.4.5/basic-animations.css"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jmpress/0.4.5/basic-animations.min.css"></script>
@@ -24,61 +24,59 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jmpress/0.4.5/plugins/jmpress.toggle.min.js"></script>
         
         <script type="text/javascript" src="impress.js"></script>
+        <style>
+            body{ background-color:lightsteelblue;}
+            .box{
+                display:block;
+                width:800px;
+                height:600px;
+                padding: 30px 50px;
+                background-color:aliceblue;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+                border: 1px solid rbga(0,0,0,.3);
+                border-radius:20px;
+                text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:40px;
+                color: rosybrown;
+            }
+            img{
+                width:500px;
+                height:300px;
+            }
+        </style>
     </head>
     <body>
         <div id="impress">
-            <div class="step" data-x="0" data-y="0">
-                Slide One
+            <div class="step box" data-x="0" data-y="0" data-z="-500" data-scale="0.5">
+                <p style="font-size:45px;"><b>Buzzfeed Personality Quizzes</b></p>
+                <p style="font-size:35px;">by Haley Leonard and Jalysee Brown</p>
+                <img src="https://pixel.nymag.com/imgs/daily/intelligencer/2019/01/29/29-buzzfeed-quizzes.w600.h315.2x.jpg" />
             </div>
-            <div class="step" data-x="500" data-y="0" >
-                Slide Two
+            <div class="step box" data-x="500" data-y="1000" data-z="-1000" data-scale="0.5" >
+                <p>Impress.js Framework</p>
+                <ul>
+                    <li>Inspired by prezi</li>
+                    <li>HTML5 and CSS3</li>
+                </ul>
+                <img src="https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/florian-olivo-1169465-unsplash-1.jpg?lossy=1&strip=1&webp=1" />
             </div>
-            <div class="step" data-x="500" data-y="-400">
-                Slide 3
+            <div class="step box" data-x="1000" data-y="2000" data-z="-1500" data-scale="0.5">
+                <p>Our Project</p>
+                <ul>
+                    <li>Three Buzzfeed-like personality quizzes</li>
+                    <li>Stores answers into a database</li>
+                </ul>
+                <img src="https://www.houselogic.com/wp-content/uploads/2018/07/creative-ways-organize-your-home-that-fit-your-personality-retina_retina_eb6fe726a068894b69aeb620787a71d9.jpg" />
             </div>
-            <div class="step" data-x="500" data-y="-800" data-scale="0.5">
-                Slide 4
+            <div class="step box" data-x="1500" data-y="3000" data-z="-2000" data-scale="0.5">
+                <p>Demo</p>
             </div>
         </div>
 
-        <div class="hint">
-            <p>Use arrow keys to navigate</p>
-        </div>
+        
 
-        <script type="text/javascript">
-            $(function () {
-                $('#simple').jmpress();
-            });
-        </script>
-
-        <!-- IGNORE BELOW THIS LINE -->
-
-        <div style="position: fixed; bottom: 50px; left: 10px; pointer-events: auto;">
-            <g:plusone href="http://jmpressjs.github.com/jmpress.js"></g:plusone>
-            <script type="text/javascript">
-                (function () {
-                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                    po.src = 'https://apis.google.com/js/plusone.js';
-                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                })();
-            </script>
-            <a href="http://twitter.com/share" class="twitter-share-button" data-text="jmpress.js: a jQuery port of impress.js" data-url="http://jmpressjs.github.com/jmpress.js" data-related="jmpressjs"></a>
-            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-        </div>
-
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-28251006-1']);
-            _gaq.push(['_trackPageview']);
-
-            (function () {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
     </body>
 </html>

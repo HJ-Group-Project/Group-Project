@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{247C30A4-F85D-4E99-991B-3061D7BE2236}"
 	ProjectSection(SolutionItems) = preProject
+		js\impress.js = js\impress.js
 		index.html = index.html
 		style.css = style.css
 	EndProjectSection
