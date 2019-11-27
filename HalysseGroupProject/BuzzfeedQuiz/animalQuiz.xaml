@@ -8,37 +8,37 @@
         Title="animalQuiz" Height="450" Width="800">
     <Grid>
         <GroupBox Header="What is your lifestyle?" HorizontalAlignment="Left" Height="149" VerticalAlignment="Top" Width="360" Margin="24,10,0,0" FontSize="14" FontWeight="Bold" BorderBrush="#FFD315FD" Foreground="#FF210EDA">
-            <ListBox x:Name="AnQues1" HorizontalAlignment="Left" Height="112" VerticalAlignment="Top" Width="333" Margin="0,10,0,0">
-                <RadioButton x:Name="comfortRB" Content="Staying in place comfortably" Checked="RadioButton_Checked_2" Height="19" Width="220" FontWeight="Normal"/>
-                <RadioButton x:Name="comegoRB" Content="I come and go as I please" Checked="RadioButton_Checked_3" Height="20" Width="255" FontWeight="Normal"/>
+            <StackPanel x:Name="AnQues1" HorizontalAlignment="Left" Height="112" VerticalAlignment="Top" Width="333" Margin="0,10,0,0">
+                <RadioButton x:Name="comfortRB" Content="Staying in place comfortably"  Height="22" FontWeight="Normal" Margin="0,0,56.333,0"/>
+                <RadioButton x:Name="comegoRB" Content="I come and go as I please"  Height="20" FontWeight="Normal" Margin="0,0,39.333,0"/>
                 <RadioButton x:Name="spendRB" Content="I spend a lot of time out, &#xD;&#xA;but love to come back home" FontWeight="Normal"/>
                 <RadioButton x:Name="friendsRB" Content="I spend all day with my friends&#xD;&#xA;" FontWeight="Normal"/>
-            </ListBox>
+            </StackPanel>
         </GroupBox>
         <GroupBox Header="Someone comes to you looking to start a fight, &#xD;&#xA;what do you do?" HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="360" Margin="24,164,0,0" FontSize="14" FontWeight="Bold" Cursor="None" BorderBrush="#FFB01AE8" Foreground="#FF0D20DE">
             <GroupBox Header="What does your social circle look like?" HorizontalAlignment="Left" Height="136" Margin="389,-188,-388,0" VerticalAlignment="Top" Width="347" BorderBrush="#FFC210EA">
                 <GroupBox Header="How open would you say your life is?" HorizontalAlignment="Left" Height="146" Margin="-1,136,-5,-172" VerticalAlignment="Top" Width="341" BorderBrush="#FFC217E8" Cursor="Arrow">
-                    <ListBox x:Name="AnQues4" Margin="10,10,21,7">
+                    <StackPanel x:Name="AnQues4" Margin="10,10,21,7">
                         <RadioButton x:Name="secretRB" Content="I've got many secrets" FontWeight="Normal"/>
-                        <RadioButton x:Name="bookRB" Content="My life is an open book&#xD;&#xA;" FontWeight="Normal" Height="20" Width="244"/>
+                        <RadioButton x:Name="bookRB" Content="My life is an open book&#xD;&#xA;" FontWeight="Normal" Height="16" Margin="0,0,27.667,0"/>
                         <RadioButton x:Name="lifeRB" Content="I don't believe my life is anyone's concern" FontWeight="Normal"/>
                         <RadioButton x:Name="truthRB" Content="I'll exaggerate the truth most likely" FontWeight="Normal"/>
-                    </ListBox>
+                    </StackPanel>
                 </GroupBox>
             </GroupBox>
         </GroupBox>
-        <ListBox x:Name="AnQues2" HorizontalAlignment="Left" Height="102" VerticalAlignment="Top" Width="331" Margin="35,205,0,0">
-            <RadioButton x:Name="strikeRB" Content="I sneak up on them and strike" FontSize="14" Checked="strikeRB_Checked"/>
+        <StackPanel x:Name="AnQues2" HorizontalAlignment="Left" Height="102" VerticalAlignment="Top" Width="331" Margin="35,205,0,0">
+            <RadioButton x:Name="strikeRB" Content="I sneak up on them and strike" FontSize="14" />
             <RadioButton x:Name="walkRB" Content="I walk away as it's unnecessary to fight" FontSize="14"/>
             <RadioButton x:Name="rageRB" Content="I blindly go raging in tackling them" FontSize="14"/>
             <RadioButton x:Name="callRB" Content="I call my friends and we handle it together" Height="20" FontSize="14"/>
-        </ListBox>
-        <ListBox x:Name="AnQues3" Margin="431,40,49,286">
-            <RadioButton x:Name="myselfRB" Content="I stick to myself&#xD;&#xA;" Height="17" Width="175" FontSize="14"/>
-            <RadioButton x:Name="strangerRB" Content="I can strike up a conversation with strangers" FontSize="14"/>
-            <RadioButton x:Name="familyRB" Content="Mostly just family" Checked="RadioButton_Checked_4" Height="19" Width="128" FontSize="14"/>
-            <RadioButton x:Name="loyalRB" Content="I have some loyal friends" FontSize="14"/>
-        </ListBox>
+        </StackPanel>
+        <StackPanel x:Name="AnQues3" Margin="431,40,49,286">
+            <RadioButton x:Name="myselfRB" Content="I stick to myself&#xD;&#xA;" Height="17" FontSize="14" Margin="0,0,69.333,0"/>
+            <RadioButton x:Name="strangerRB" Content="I can strike up a conversation with strangers" FontSize="14" Height="23" Margin="0,0,0.333,0"/>
+            <RadioButton x:Name="familyRB" Content="Mostly just family" Height="21" FontSize="14" Margin="0,0,92.333,0"/>
+            <RadioButton x:Name="loyalRB" Content="I have some loyal friends" FontSize="14" Height="25" Margin="0,0,0.333,0"/>
+        </StackPanel>
         <Button x:Name="ResultsBttn" Content="Get Results!" HorizontalAlignment="Left" VerticalAlignment="Top" Width="234" Margin="273,344,0,0" Height="51" Click="ResultusBttn_Click" FontSize="20" FontFamily="Hobo Std" Background="#FFC002C9" Foreground="#FF1E0AE8" BorderBrush="Black"/>
 
     </Grid>
