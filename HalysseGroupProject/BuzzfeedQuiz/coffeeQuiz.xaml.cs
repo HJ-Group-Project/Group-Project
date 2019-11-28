@@ -113,5 +113,10 @@ namespace BuzzfeedQuiz
             db.TAnswers.Add(answer);
             db.SaveChanges();
         }
+
+        private void BlackRB_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -8,35 +8,44 @@
         Title="coffeeQuiz" Height="638.883" Width="1014.444">
     <Grid>
 
-        <GroupBox x:Name="cofQuesFour" Header="Pick a hobby:" HorizontalAlignment="Left" Height="186" Margin="529,236,0,0" VerticalAlignment="Top" Width="469" FontSize="22">
+        <GroupBox x:Name="cofQuesFour" Header="Pick a hobby:" HorizontalAlignment="Left" Height="199" Margin="509,236,0,0" VerticalAlignment="Top" Width="441" FontSize="22" Foreground="#FF0F0101" BorderBrush="#FF0AF9C1" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#FFF41AB7">
             <StackPanel x:Name="cofQues4SP" HorizontalAlignment="Left" Height="142" Margin="-4,12,0,0" VerticalAlignment="Top" Width="447">
-                <RadioButton x:Name="moviesRB" Content="Watch movies"/>
-                <RadioButton x:Name="shopRB" Content="Go shopping"/>
-                <RadioButton x:Name="hikeRB" Content="Hike"/>
-                <RadioButton x:Name="sleepRB" Content="Take naps"/>
+                <RadioButton x:Name="moviesRB" Content="Watch movies" FontSize="16"/>
+                <RadioButton x:Name="shopRB" Content="Go shopping" FontSize="16"/>
+                <RadioButton x:Name="hikeRB" Content="Hike" FontSize="16"/>
+                <RadioButton x:Name="sleepRB" Content="Take naps" FontSize="16"/>
             </StackPanel>
         </GroupBox>
-        <GroupBox x:Name="cofQuesThree" Header="Cats or dogs?" HorizontalAlignment="Left" Height="186" Margin="10,236,0,0" VerticalAlignment="Top" Width="492" FontSize="22">
+        <GroupBox x:Name="cofQuesThree" Header="Cats or dogs?" HorizontalAlignment="Left" Height="199" Margin="10,236,0,0" VerticalAlignment="Top" Width="456" FontSize="22" Foreground="#FF0F0101" BorderBrush="#FF08F99E" FontFamily="Segoe UI Black" FontWeight="Bold" Background="#FF08B7F7">
             <StackPanel x:Name="cofQues3SP" HorizontalAlignment="Left" Height="124" Margin="-1,13,0,0" VerticalAlignment="Top" Width="467">
-                <RadioButton x:Name="catRB" Content="Cats"/>
-                <RadioButton x:Name="dogsRB" Content="Dogs"/>
+                <RadioButton x:Name="catRB" Content="Cats" FontWeight="Bold" FontSize="16"/>
+                <RadioButton x:Name="dogsRB" Content="Dogs" FontWeight="Bold" FontSize="16"/>
             </StackPanel>
         </GroupBox>
-        <GroupBox x:Name="cofQuesOne" Header="Are you a morning or night person?" HorizontalAlignment="Left" Height="190" Margin="10,23,0,0" VerticalAlignment="Top" Width="492" FontSize="22">
+        <GroupBox x:Name="cofQuesOne" Header="Are you a morning or night person?" HorizontalAlignment="Left" Height="208" Margin="10,23,0,0" VerticalAlignment="Top" Width="456" FontSize="22" Foreground="#FF0F0101" FontWeight="Bold" FontFamily="Segoe UI Black" BorderBrush="#FF08F99E" Background="#FF08FCA0">
             <StackPanel x:Name="cofQues1SP" HorizontalAlignment="Left" Height="125" Margin="4,22,-2,0" VerticalAlignment="Top" Width="478">
-                <RadioButton x:Name="mornRB" Content="Morning"/>
-                <RadioButton x:Name="nightRB" Content="Night"/>
+                <RadioButton x:Name="mornRB" Content="Morning" FontSize="16"/>
+                <RadioButton x:Name="nightRB" Content="Night" FontSize="16"/>
             </StackPanel>
         </GroupBox>
-        <GroupBox x:Name="cofQuesTwo" Header="Choose a color:" HorizontalAlignment="Left" Height="190" Margin="529,23,0,0" VerticalAlignment="Top" Width="469" FontSize="22">
+        <GroupBox x:Name="cofQuesTwo" Header="Choose a color:" HorizontalAlignment="Left" Height="208" Margin="509,23,0,0" VerticalAlignment="Top" Width="441" FontSize="22" FontFamily="Segoe UI Black" Foreground="#FF0F0101" FontWeight="Bold" BorderBrush="#FF07EEB0" Background="#FF930DED">
             <StackPanel x:Name="cofQues2SP" HorizontalAlignment="Left" Height="114" Margin="10,10,0,0" VerticalAlignment="Top" Width="434">
-                <RadioButton x:Name="purpRB" Content="Purple"/>
-                <RadioButton x:Name="orangeRB" Content="Orange"/>
-                <RadioButton x:Name="blueRB" Content="Blue"/>
-                <RadioButton x:Name="BlackRB" Content="Black"/>
+                <RadioButton x:Name="purpRB" Content="Purple" FontSize="16"/>
+                <RadioButton x:Name="orangeRB" Content="Orange" FontSize="16"/>
+                <RadioButton x:Name="blueRB" Content="Blue" FontSize="16"/>
+                <RadioButton x:Name="BlackRB" Content="Black" Checked="BlackRB_Checked" FontSize="16" Height="64" Margin="0,0,-0.4,0"/>
             </StackPanel>
         </GroupBox>
-        <Button x:Name="CofresultsBTN" Content="Get Results!" HorizontalAlignment="Left" Height="105" Margin="348,456,0,0" VerticalAlignment="Top" Width="334" Click="CofresultsBTN_Click_1" FontSize="22"/>
+        <Button x:Name="CofresultsBTN" Content="Get Results!" HorizontalAlignment="Left" Height="81" Margin="348,480,0,0" VerticalAlignment="Top" Width="306" Click="CofresultsBTN_Click_1" FontSize="24" FontWeight="Bold" Background="#FFC501B8" BorderBrush="#FF090000">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF20EB13" Offset="0.096"/>
+                    <GradientStop Color="#FF2FDDDA" Offset="0.479"/>
+                    <GradientStop Color="#FF0DE58C" Offset="0.319"/>
+                    <GradientStop Color="#FF20EB13" Offset="0.314"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
 
     </Grid>
 </Window>

@@ -7,14 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <GroupBox x:Name="quizGB" Header="Choose a quiz!" HorizontalAlignment="Left" Height="235" Margin="10,26,0,0" VerticalAlignment="Top" Width="760" FontSize="36">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0AF494" Offset="0"/>
+                <GradientStop Color="#FF08D8F6" Offset="1"/>
+                <GradientStop Color="#FF07D5F3" Offset="0.617"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <GroupBox x:Name="quizGB" Header="Choose a quiz!" HorizontalAlignment="Left" Height="235" Margin="10,26,0,0" VerticalAlignment="Top" Width="760" FontSize="36" FontWeight="Bold" BorderBrush="{x:Null}" Foreground="#FF0E0101">
             <StackPanel x:Name="quizstck" HorizontalAlignment="Left" Height="199" Margin="4,-7,-2,0" VerticalAlignment="Top" Width="746">
-                <RadioButton x:Name="coffeeQuizRB" Content="What kind of coffee drink are you?"/>
-                <RadioButton x:Name="animalQuizRB" Content="What kind of animal are you?"/>
-                <RadioButton x:Name="spongebobQuizRB" Content="Which character from Spongebob are you?"/>
+                <RadioButton x:Name="coffeeQuizRB" Content="What kind of coffee drink are you?" Foreground="#FFF90404"/>
+                <RadioButton x:Name="animalQuizRB" Content="What kind of animal are you?" Foreground="#FFAD0FFA"/>
+                <RadioButton x:Name="spongebobQuizRB" Content="Which character from Spongebob are you?" Background="#FFFAFAF9" Foreground="#FFF77F04"/>
             </StackPanel>
         </GroupBox>
-        <Button x:Name="chooseQuizbtn" Content="Take the Quiz" HorizontalAlignment="Left" Height="89" Margin="258,292,0,0" VerticalAlignment="Top" Width="266" FontSize="36" Click="ChooseQuizbtn_Click"/>
+        <Button x:Name="chooseQuizbtn" Content="Take the Quiz!&#xD;&#xA;" HorizontalAlignment="Left" Height="70" Margin="232,266,0,0" VerticalAlignment="Top" Width="276" FontSize="36" Click="ChooseQuizbtn_Click" Foreground="#FF080004" FontWeight="Bold" BorderBrush="#FF080004">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF881F" Offset="0"/>
+                    <GradientStop Color="#FFFC105C" Offset="0.806"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
