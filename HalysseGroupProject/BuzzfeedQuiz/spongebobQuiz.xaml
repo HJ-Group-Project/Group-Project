@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BuzzfeedQuiz"
         mc:Ignorable="d"
         Title="spongebobQuiz" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FFEDE9D6">
         <GroupBox x:Name="ques1GB" Header="In your free time, you are:" HorizontalAlignment="Left" Height="158" Margin="10,10,0,0" VerticalAlignment="Top" Width="346" FontSize="22" Foreground="#FFF09404" BorderBrush="#FFDCF709" FontWeight="Bold" FontFamily="Lucida Sans Unicode" Background="#FFFCF514">
             <StackPanel x:Name="ques1SP" HorizontalAlignment="Left" Height="139" Margin="-6,4,0,0" VerticalAlignment="Top" Width="336">
                 <RadioButton x:Name="musicRB" Content="Listening to music" FontWeight="Normal" FontFamily="Segoe UI"/>
